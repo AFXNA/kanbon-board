@@ -1,20 +1,32 @@
-import { useState } from 'react'
+import React from 'react'; // Import React library
+import {useState} from 'react';
+// Define a functional component named 'Welcome'
 
-import './styles.css'
-
+// Another functional component named 'App'
 export default function App() {
-  return(
+  const [items, setItems] = useState([1,2]);
+
+    const add = () => {
+      setItems([...items, items.length+1]);
+    };
+
+    const remove = () => {
+      if(items.length>0){
+        setItems(items, slice(0,-1));
+      }
+    };
+
+  return (
     <div>
-      <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>hahabruh</title>
-    </head>
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.jsx"></script>
-    </body>
+      <ul>
+        {items.map((num)=>(
+          <li key={num}>{num}</li>
+        ))};
+      </ul>
+
+      <button onClick={add}>More</button>
+      <button onClick={remove}>Less</button>
     </div>
   );
 }
+ // Export the App component for use in other files

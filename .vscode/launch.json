@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/naran/IdeaProjects/webhell",
-      "program": "c:/Users/naran/IdeaProjects/webhell/build/Debug/outDebug",
+      "cwd": "c:/Users/naran/IdeaProjects/webdev/kanbon-board/hahabruh",
+      "program": "c:/Users/naran/IdeaProjects/webdev/kanbon-board/hahabruh/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
